@@ -16,50 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qen-88-4oL">
-                                <rect key="frame" x="25" y="268" width="364" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-UY-4Vm">
-                                <rect key="frame" x="25" y="327" width="364" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y3-eR-3gO">
-                                <rect key="frame" x="173.5" y="386" width="67" height="31"/>
+                                <rect key="frame" x="124.5" y="451.5" width="165.5" height="47.5"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Here.">
+                                    <backgroundConfiguration key="background"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="28"/>
                                     <color key="baseForegroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNm-g6-So1"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oae-Vr-XZO"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="zJa-UY-4Vm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="2oK-dv-78P"/>
-                            <constraint firstItem="qen-88-4oL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="8VC-vN-Lf4"/>
-                            <constraint firstItem="zJa-UY-4Vm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cbi-vQ-6au"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zJa-UY-4Vm" secondAttribute="trailing" constant="25" id="DYl-bs-Xk2"/>
-                            <constraint firstItem="qen-88-4oL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="FSY-hb-w1Y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qen-88-4oL" secondAttribute="trailing" constant="25" id="JRI-ax-dvw"/>
-                            <constraint firstItem="zJa-UY-4Vm" firstAttribute="top" secondItem="qen-88-4oL" secondAttribute="bottom" constant="25" id="ceP-yP-WkD"/>
-                            <constraint firstItem="5y3-eR-3gO" firstAttribute="top" secondItem="zJa-UY-4Vm" secondAttribute="bottom" constant="25" id="jMJ-ap-ggu"/>
-                            <constraint firstItem="qen-88-4oL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wLi-0x-xA1"/>
+                            <constraint firstItem="5y3-eR-3gO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="70g-m6-FH7"/>
                             <constraint firstItem="5y3-eR-3gO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wfI-TC-lnG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vDa-cS-QKA"/>
-                    <connections>
-                        <outlet property="passwordTextField" destination="zJa-UY-4Vm" id="ayW-HM-YUa"/>
-                        <outlet property="userTextField" destination="qen-88-4oL" id="aCT-H1-Fh9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

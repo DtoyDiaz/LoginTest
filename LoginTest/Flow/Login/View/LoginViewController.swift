@@ -10,10 +10,17 @@ import Alamofire
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var userTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     var interactor : LoginBussinesLogic?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func loginButton(_ sender: Any) {
+        let nextVC = LoginRouter.assembleModule()
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
