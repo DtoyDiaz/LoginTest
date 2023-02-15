@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class HomeViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     var interactor : HomeBussinesLogic?
 
@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: HomeDisplayLogic {
+extension LoginViewController: HomeDisplayLogic {
     func displayData(viewModel: [LoginResponse]) {
     }
 }

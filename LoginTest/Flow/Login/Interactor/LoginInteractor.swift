@@ -8,12 +8,12 @@
 import Foundation
 import Alamofire
 
-class HomeInteractor {
+class LoginInteractor {
     
     var presenter: HomePresentationLogic?
 }
 
-extension HomeInteractor: HomeBussinesLogic {
+extension LoginInteractor: HomeBussinesLogic {
     
     func loadData() {
         

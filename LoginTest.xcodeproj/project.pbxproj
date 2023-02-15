@@ -15,10 +15,10 @@
 		C6D1C899299A90FC006DE221 /* LoginTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C897299A90FC006DE221 /* LoginTest.xcdatamodeld */; };
 		C6D1C89B299A9100006DE221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1C89A299A9100006DE221 /* Assets.xcassets */; };
 		C6D1C89E299A9100006DE221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D1C89C299A9100006DE221 /* LaunchScreen.storyboard */; };
-		C6D1C8A9299AA39D006DE221 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8A7299AA39D006DE221 /* HomeViewController.swift */; };
-		C6D1C8AA299AA39D006DE221 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D1C8A8299AA39D006DE221 /* HomeViewController.xib */; };
-		C6D1C8B0299ABB38006DE221 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8AF299ABB38006DE221 /* HomeInteractor.swift */; };
-		C6D1C8B2299ABB84006DE221 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B1299ABB84006DE221 /* HomePresenter.swift */; };
+		C6D1C8A9299AA39D006DE221 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8A7299AA39D006DE221 /* LoginViewController.swift */; };
+		C6D1C8AA299AA39D006DE221 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D1C8A8299AA39D006DE221 /* LoginViewController.xib */; };
+		C6D1C8B0299ABB38006DE221 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8AF299ABB38006DE221 /* LoginInteractor.swift */; };
+		C6D1C8B2299ABB84006DE221 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B1299ABB84006DE221 /* LoginPresenter.swift */; };
 		C6D1C8B4299ABBDC006DE221 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B3299ABBDC006DE221 /* HomeRouter.swift */; };
 		C6D1C8B7299AD95F006DE221 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B6299AD95F006DE221 /* ClientModel.swift */; };
 		C6D1CF07299D3A010016CF6A /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1CF06299D3A010016CF6A /* Contract.swift */; };
@@ -37,10 +37,10 @@
 		C6D1C89A299A9100006DE221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6D1C89D299A9100006DE221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6D1C89F299A9100006DE221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6D1C8A7299AA39D006DE221 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C6D1C8A8299AA39D006DE221 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		C6D1C8AF299ABB38006DE221 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		C6D1C8B1299ABB84006DE221 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C6D1C8A7299AA39D006DE221 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C6D1C8A8299AA39D006DE221 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C6D1C8AF299ABB38006DE221 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		C6D1C8B1299ABB84006DE221 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		C6D1C8B3299ABBDC006DE221 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		C6D1C8B6299AD95F006DE221 /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
 		C6D1CF06299D3A010016CF6A /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
@@ -114,12 +114,12 @@
 		C6D1C8A5299AA1BE006DE221 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				C6D1C8A6299AA37E006DE221 /* Home */,
+				C6D1C8A6299AA37E006DE221 /* Login */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
 		};
-		C6D1C8A6299AA37E006DE221 /* Home */ = {
+		C6D1C8A6299AA37E006DE221 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				C6D1C8B5299AD935006DE221 /* Model */,
@@ -129,14 +129,14 @@
 				C6D1C8AE299AA673006DE221 /* Router */,
 				C6D1CF06299D3A010016CF6A /* Contract.swift */,
 			);
-			path = Home;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		C6D1C8AB299AA62F006DE221 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C6D1C8A7299AA39D006DE221 /* HomeViewController.swift */,
-				C6D1C8A8299AA39D006DE221 /* HomeViewController.xib */,
+				C6D1C8A7299AA39D006DE221 /* LoginViewController.swift */,
+				C6D1C8A8299AA39D006DE221 /* LoginViewController.xib */,
 				C6D1CF08299D42720016CF6A /* LoginResponse.swift */,
 			);
 			path = View;
@@ -145,7 +145,7 @@
 		C6D1C8AC299AA653006DE221 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				C6D1C8AF299ABB38006DE221 /* HomeInteractor.swift */,
+				C6D1C8AF299ABB38006DE221 /* LoginInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -153,7 +153,7 @@
 		C6D1C8AD299AA660006DE221 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				C6D1C8B1299ABB84006DE221 /* HomePresenter.swift */,
+				C6D1C8B1299ABB84006DE221 /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 				C6D1C89E299A9100006DE221 /* LaunchScreen.storyboard in Resources */,
 				C6D1C89B299A9100006DE221 /* Assets.xcassets in Resources */,
 				C6D1C896299A90FC006DE221 /* Main.storyboard in Resources */,
-				C6D1C8AA299AA39D006DE221 /* HomeViewController.xib in Resources */,
+				C6D1C8AA299AA39D006DE221 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D1C8B2299ABB84006DE221 /* HomePresenter.swift in Sources */,
-				C6D1C8A9299AA39D006DE221 /* HomeViewController.swift in Sources */,
+				C6D1C8B2299ABB84006DE221 /* LoginPresenter.swift in Sources */,
+				C6D1C8A9299AA39D006DE221 /* LoginViewController.swift in Sources */,
 				C6D1C893299A90FC006DE221 /* ViewController.swift in Sources */,
 				C6D1CF07299D3A010016CF6A /* Contract.swift in Sources */,
 				C6D1C88F299A90FC006DE221 /* AppDelegate.swift in Sources */,
-				C6D1C8B0299ABB38006DE221 /* HomeInteractor.swift in Sources */,
+				C6D1C8B0299ABB38006DE221 /* LoginInteractor.swift in Sources */,
 				C6D1C8B4299ABBDC006DE221 /* HomeRouter.swift in Sources */,
 				C6D1C891299A90FC006DE221 /* SceneDelegate.swift in Sources */,
 				C6D1C8B7299AD95F006DE221 /* ClientModel.swift in Sources */,

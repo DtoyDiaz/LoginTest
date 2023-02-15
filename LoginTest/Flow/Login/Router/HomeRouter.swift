@@ -8,10 +8,10 @@
 import Foundation
 
 class HomeRouter{
-    static func assembleModule() -> HomeViewController {
-        let viewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let interactor = HomeInteractor()
-        let presenter = HomePresenter()
+    static func assembleModule() -> LoginViewController {
+        let viewController = LoginViewController(nibName: "HomeViewController", bundle: nil)
+        let interactor = LoginInteractor()
+        let presenter = LoginPresenter()
         viewController.interactor = interactor
         interactor.presenter = presenter
         presenter.homeViewController = viewController

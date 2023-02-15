@@ -7,12 +7,12 @@
 
 import Foundation
 
-class HomePresenter{
+class LoginPresenter{
     
     var homeViewController: HomeDisplayLogic?
 }
 
-extension HomePresenter: HomePresentationLogic {
+extension LoginPresenter: HomePresentationLogic {
     func presentData(data: ClientModel) {
     }
 }
