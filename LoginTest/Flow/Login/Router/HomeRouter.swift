@@ -7,14 +7,14 @@
 
 import Foundation
 
-class HomeRouter{
+class   LoginRouter{
     static func assembleModule() -> LoginViewController {
-        let viewController = LoginViewController(nibName: "HomeViewController", bundle: nil)
+        let viewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
         let interactor = LoginInteractor()
         let presenter = LoginPresenter()
         viewController.interactor = interactor
         interactor.presenter = presenter
-        presenter.homeViewController = viewController
+        presenter.LoginViewController = viewController
         return viewController
     }
 }

@@ -10,10 +10,10 @@ import Alamofire
 
 class LoginInteractor {
     
-    var presenter: HomePresentationLogic?
+    var presenter: LoginPresentationLogic?
 }
 
-extension LoginInteractor: HomeBussinesLogic {
+extension LoginInteractor: LoginBussinesLogic {
     
     func loadData() {
         

@@ -10,14 +10,14 @@ import Alamofire
 
 class LoginViewController: UIViewController {
     
-    var interactor : HomeBussinesLogic?
+    var interactor : LoginBussinesLogic?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 }
 
-extension LoginViewController: HomeDisplayLogic {
+extension LoginViewController: LoginDisplayLogic {
     func displayData(viewModel: [LoginResponse]) {
     }
 }

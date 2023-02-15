@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol HomeDisplayLogic: AnyObject {
+protocol LoginDisplayLogic: AnyObject {
     func displayData(viewModel: [LoginResponse])
 }
 
-protocol HomeBussinesLogic: AnyObject {
+protocol LoginBussinesLogic: AnyObject {
     func loadData()
 }
 
-protocol HomePresentationLogic: AnyObject {
+protocol LoginPresentationLogic: AnyObject {
     func presentData(data: ClientModel)
 }

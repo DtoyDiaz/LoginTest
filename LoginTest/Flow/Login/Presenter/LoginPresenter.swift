@@ -9,10 +9,10 @@ import Foundation
 
 class LoginPresenter{
     
-    var homeViewController: HomeDisplayLogic?
+    var LoginViewController: LoginDisplayLogic?
 }
 
-extension LoginPresenter: HomePresentationLogic {
+extension LoginPresenter: LoginPresentationLogic {
     func presentData(data: ClientModel) {
     }
 }
