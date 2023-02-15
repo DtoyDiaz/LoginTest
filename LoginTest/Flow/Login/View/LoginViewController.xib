@@ -17,8 +17,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="LoginViewController" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ryt-qu-K8M">
+                    <rect key="frame" x="25" y="244" width="364" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UeK-SF-ebF">
+                    <rect key="frame" x="25" y="303" width="364" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMH-48-dla">
+                    <rect key="frame" x="173.5" y="362" width="67" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                        <color key="baseForegroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
+            <constraints>
+                <constraint firstItem="UeK-SF-ebF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="3Cz-av-uC2"/>
+                <constraint firstItem="DMH-48-dla" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Eib-xg-I6Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ryt-qu-K8M" secondAttribute="trailing" constant="25" id="K6h-hL-8G8"/>
+                <constraint firstItem="UeK-SF-ebF" firstAttribute="top" secondItem="Ryt-qu-K8M" secondAttribute="bottom" constant="25" id="Ltq-yx-hkl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UeK-SF-ebF" secondAttribute="trailing" constant="25" id="RyI-1t-v43"/>
+                <constraint firstItem="DMH-48-dla" firstAttribute="top" secondItem="UeK-SF-ebF" secondAttribute="bottom" constant="25" id="T25-G8-AOw"/>
+                <constraint firstItem="UeK-SF-ebF" firstAttribute="top" secondItem="Ryt-qu-K8M" secondAttribute="bottom" constant="25" id="dlo-wQ-6po"/>
+                <constraint firstItem="UeK-SF-ebF" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eCJ-LG-ZxA"/>
+                <constraint firstItem="Ryt-qu-K8M" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="fd8-8k-2Q8"/>
+                <constraint firstItem="DMH-48-dla" firstAttribute="top" secondItem="UeK-SF-ebF" secondAttribute="bottom" constant="25" id="qmE-ex-Ceo"/>
+                <constraint firstItem="Ryt-qu-K8M" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="yVO-MI-pef"/>
+            </constraints>
             <point key="canvasLocation" x="132" y="85"/>
         </view>
     </objects>
