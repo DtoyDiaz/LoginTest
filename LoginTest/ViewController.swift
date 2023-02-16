@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func loginButton(_ sender: Any) {
-        let nextVC = LoginViewController.init(nibName: "LoginViewController", bundle: nil)
-        navigationController?.pushViewController(nextVC, animated: true)
+        let nextVC = LoginRouter.assembleModule()
+        nextVC.interactor?.loadData()
     }
 }
 
