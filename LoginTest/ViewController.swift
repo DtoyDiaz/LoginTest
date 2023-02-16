@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         let nextVC = LoginRouter.assembleModule()
         nextVC.interactor?.loadData()
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
