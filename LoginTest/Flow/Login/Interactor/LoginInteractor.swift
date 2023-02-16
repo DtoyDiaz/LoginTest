@@ -30,7 +30,7 @@ extension LoginInteractor: LoginBussinesLogic {
                    encoding: URLEncoding(destination: .queryString)
         ).response {
             response in
-            print(response)
+            print(response.response?.statusCode)
         }
     }
 }
