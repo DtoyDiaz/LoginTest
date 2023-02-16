@@ -28,11 +28,9 @@ extension LoginInteractor: LoginBussinesLogic {
                    method: .get,
                    parameters: parameters,
                    encoding: URLEncoding(destination: .queryString)
-        )
-        .responseDecodable(
-            of: ClientModel.self
-        ) { response in
-            print(response.response?.statusCode)
+        ).response {
+            response in
+            print(response)
         }
     }
 }
