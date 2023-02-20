@@ -12,7 +12,7 @@ protocol LoginDisplayLogic: AnyObject {
 }
 
 protocol LoginBussinesLogic: AnyObject {
-    func loadData()
+    func getToken()
 }
 
 protocol LoginPresentationLogic: AnyObject {

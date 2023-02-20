@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        interactor?.loadData()
+        interactor?.getToken()
     }
 }
 
