@@ -27,7 +27,7 @@ extension LoginInteractor: LoginBussinesLogic {
         let redirector = Redirector(behavior: .modify({ task, req, response in
             let queryParams = URLComponents(url: req.url!, resolvingAgainstBaseURL: true)?.queryItems
             let oauthKey = queryParams?.first(where: { $0.name == "oauth_key" })
-            self.hasLogin(oauthKey: "oauthKey")
+            self.hasLogin(oauthKey: oauthKey?.value ?? "")
             return req
         }))
         
