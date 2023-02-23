@@ -13,6 +13,6 @@ class LoginPresenter{
 }
 
 extension LoginPresenter: LoginPresentationLogic {
-    func presentData(data: ClientModel) {
+    func presentData(data: TokenResponse) {
     }
 }

@@ -20,7 +20,7 @@
 		C6D1C8B0299ABB38006DE221 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8AF299ABB38006DE221 /* LoginInteractor.swift */; };
 		C6D1C8B2299ABB84006DE221 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B1299ABB84006DE221 /* LoginPresenter.swift */; };
 		C6D1C8B4299ABBDC006DE221 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B3299ABBDC006DE221 /* HomeRouter.swift */; };
-		C6D1C8B7299AD95F006DE221 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B6299AD95F006DE221 /* ClientModel.swift */; };
+		C6D1C8B7299AD95F006DE221 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B6299AD95F006DE221 /* TokenResponse.swift */; };
 		C6D1CF07299D3A010016CF6A /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1CF06299D3A010016CF6A /* Contract.swift */; };
 		C6D1CF09299D42720016CF6A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1CF08299D42720016CF6A /* LoginResponse.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 		C6D1C8AF299ABB38006DE221 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		C6D1C8B1299ABB84006DE221 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		C6D1C8B3299ABBDC006DE221 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		C6D1C8B6299AD95F006DE221 /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		C6D1C8B6299AD95F006DE221 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 		C6D1CF06299D3A010016CF6A /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		C6D1CF08299D42720016CF6A /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		E61D6782448D5D3F96173669 /* Pods-LoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTest.release.xcconfig"; path = "Target Support Files/Pods-LoginTest/Pods-LoginTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 		C6D1C8B5299AD935006DE221 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C6D1C8B6299AD95F006DE221 /* ClientModel.swift */,
+				C6D1C8B6299AD95F006DE221 /* TokenResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				C6D1C8B0299ABB38006DE221 /* LoginInteractor.swift in Sources */,
 				C6D1C8B4299ABBDC006DE221 /* HomeRouter.swift in Sources */,
 				C6D1C891299A90FC006DE221 /* SceneDelegate.swift in Sources */,
-				C6D1C8B7299AD95F006DE221 /* ClientModel.swift in Sources */,
+				C6D1C8B7299AD95F006DE221 /* TokenResponse.swift in Sources */,
 				C6D1CF09299D42720016CF6A /* LoginResponse.swift in Sources */,
 				C6D1C899299A90FC006DE221 /* LoginTest.xcdatamodeld in Sources */,
 			);

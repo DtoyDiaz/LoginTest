@@ -16,5 +16,5 @@ protocol LoginBussinesLogic: AnyObject {
 }
 
 protocol LoginPresentationLogic: AnyObject {
-    func presentData(data: ClientModel)
+    func presentData(data: TokenResponse)
 }
