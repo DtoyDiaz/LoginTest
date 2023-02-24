@@ -16,10 +16,12 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        interactor?.getToken()
+        interactor?.getToken(username: (userTextField.text ?? "nil"),
+                             password: (passwordTextField.text!))
     }
 }
 

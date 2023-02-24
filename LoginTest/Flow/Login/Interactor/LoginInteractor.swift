@@ -15,7 +15,7 @@ class LoginInteractor {
 
 extension LoginInteractor: LoginBussinesLogic {
     
-    func getToken() {
+    func getToken(username: String, password: String) {
         
         var url = "https://passport.scotiabank.com/oauth2/v1/authorize"
         let parameters: Parameters = [
@@ -45,8 +45,8 @@ extension LoginInteractor: LoginBussinesLogic {
         var url = "https://www.banco.colpatria.com.co/banca-virtual/mobile/api/elysium/authorization"
         let parameters: Parameters = [
             "client_id": "0f762fbb-3029-4e23-ac34-9de28474d505",
-            "username":"danielitoy",
-            "password":"ScotiabankT0y"
+            "username":"",
+            "password":""
         ]
         
         let headers: HTTPHeaders = ["Passport-OAuth-Key":oauthKey]
