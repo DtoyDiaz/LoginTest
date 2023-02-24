@@ -72,7 +72,7 @@ extension LoginInteractor: LoginBussinesLogic {
         var url = "https://www.banco.colpatria.com.co/banca-virtual/mobile/api/janus/passport/token"
         let parameters: Parameters = [
             "client_id": "0f762fbb-3029-4e23-ac34-9de28474d505",
-            "code": "CAMBIAR",
+            "code": passportToken,
             "redirect_uri": "https://www.banco.colpatria.com.co/banca-virtual/principal",
             "grant_type": "authorization_code"
         ]
