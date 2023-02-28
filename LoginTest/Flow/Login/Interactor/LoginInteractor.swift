@@ -27,7 +27,7 @@ extension LoginInteractor: LoginBussinesLogic {
         let redirector = Redirector(behavior: .modify({ task, req, response in
             let queryParams = URLComponents(url: req.url!, resolvingAgainstBaseURL: true)?.queryItems
             let oauthKey = queryParams?.first(where: { $0.name == "oauth_key" })
-            self.hasLogin(oauthKey: oauthKey?.value ?? "")
+            self.hasLogin(oauthKey: oauthKey?.value ?? "", username: username, password: password)
             return nil
         }))
         
@@ -41,12 +41,12 @@ extension LoginInteractor: LoginBussinesLogic {
         }.redirect(using: redirector)
     }
     
-    func hasLogin(oauthKey:String) {
+    func hasLogin(oauthKey:String, username: String, password: String) {
         var url = "https://www.banco.colpatria.com.co/banca-virtual/mobile/api/elysium/authorization"
         let parameters: Parameters = [
             "client_id": "0f762fbb-3029-4e23-ac34-9de28474d505",
-            "username":"",
-            "password":""
+            "username": username,
+            "password": password
         ]
         
         let headers: HTTPHeaders = ["Passport-OAuth-Key":oauthKey]
