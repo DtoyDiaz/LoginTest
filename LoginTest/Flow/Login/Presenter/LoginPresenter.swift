@@ -13,6 +13,12 @@ class LoginPresenter{
 }
 
 extension LoginPresenter: LoginPresentationLogic {
+    func presentLoginSuccess() {
+    }
+    
+    func presentLoginError() {
+    }
+    
     func presentData(data: TokenResponse) {
     }
 }
