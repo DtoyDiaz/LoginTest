@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12CE00C60C76BE082E8D6ABB /* Pods_LoginTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCB68B3D46FEAEA244DC7ED /* Pods_LoginTest.framework */; };
+		C640D30C29AEB7DF00E881B2 /* TokenAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C640D30B29AEB7DF00E881B2 /* TokenAccess.swift */; };
 		C6D1C88F299A90FC006DE221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C88E299A90FC006DE221 /* AppDelegate.swift */; };
 		C6D1C891299A90FC006DE221 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C890299A90FC006DE221 /* SceneDelegate.swift */; };
 		C6D1C893299A90FC006DE221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C892299A90FC006DE221 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		55C150036E76EDC359F84A31 /* Pods-LoginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTest.debug.xcconfig"; path = "Target Support Files/Pods-LoginTest/Pods-LoginTest.debug.xcconfig"; sourceTree = "<group>"; };
 		ACCB68B3D46FEAEA244DC7ED /* Pods_LoginTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C640D30B29AEB7DF00E881B2 /* TokenAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAccess.swift; sourceTree = "<group>"; };
 		C6D1C88B299A90FC006DE221 /* LoginTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D1C88E299A90FC006DE221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D1C890299A90FC006DE221 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				C6D1C8B6299AD95F006DE221 /* TokenResponse.swift */,
+				C640D30B29AEB7DF00E881B2 /* TokenAccess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				C6D1C88F299A90FC006DE221 /* AppDelegate.swift in Sources */,
 				C6D1C8B0299ABB38006DE221 /* LoginInteractor.swift in Sources */,
 				C6D1C8B4299ABBDC006DE221 /* HomeRouter.swift in Sources */,
+				C640D30C29AEB7DF00E881B2 /* TokenAccess.swift in Sources */,
 				C6D1C891299A90FC006DE221 /* SceneDelegate.swift in Sources */,
 				C6D1C8B7299AD95F006DE221 /* TokenResponse.swift in Sources */,
 				C6D1CF09299D42720016CF6A /* LoginResponse.swift in Sources */,

@@ -79,12 +79,13 @@ extension LoginInteractor: LoginBussinesLogic {
         
         let headers: HTTPHeaders = ["Content-Type":"application/x-www-form-urlencoded"]
         
+        
         AF.request(url,
                 method: .post,
                 parameters: parameters,
                 encoding: Alamofire.URLEncoding.default,
                 headers: headers
-        ).responseJSON {
+        ).responseDecodable(of: TokenAccess.self) {
             response in
             switch response.result {
             case .success(let value):
