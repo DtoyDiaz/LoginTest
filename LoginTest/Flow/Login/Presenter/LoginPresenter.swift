@@ -9,13 +9,16 @@ import Foundation
 
 class LoginPresenter{
     
-    var LoginViewController: LoginDisplayLogic?
+    var loginViewController: LoginDisplayLogic?
+
 }
 
 extension LoginPresenter: LoginPresentationLogic {
     func presentLoginSuccess() {
+        self.loginViewController?.displayLoginSuccess()
     }
     
     func presentLoginError() {
+        self.loginViewController?.displayLoginError()
     }
 }

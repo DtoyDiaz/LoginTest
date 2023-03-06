@@ -14,7 +14,7 @@ class   LoginRouter{
         let presenter = LoginPresenter()
         viewController.interactor = interactor
         interactor.presenter = presenter
-        presenter.LoginViewController = viewController
+        presenter.loginViewController = viewController
         return viewController
     }
 }

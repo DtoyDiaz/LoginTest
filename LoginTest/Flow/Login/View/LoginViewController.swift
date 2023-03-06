@@ -16,14 +16,13 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextField.isSecureTextEntry = true
     }
     
     @IBAction func loginButton(_ sender: Any) {
         interactor?.getToken(
             username: (userTextField.text ?? "nil"),
             password: (passwordTextField.text!))
-        self.displayLoginSuccess()
-        self.displayLoginError()
     }
     
     func displayLoginSuccess(){

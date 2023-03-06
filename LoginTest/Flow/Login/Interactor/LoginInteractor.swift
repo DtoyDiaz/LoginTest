@@ -38,7 +38,7 @@ extension LoginInteractor: LoginBussinesLogic {
                    encoding: URLEncoding(destination: .queryString)
         ).response {
             response in
-            print(response.response?.statusCode)
+            
         }.redirect(using: redirector)
     }
     

@@ -24,6 +24,8 @@
 		C6D1C8B7299AD95F006DE221 /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1C8B6299AD95F006DE221 /* TokenResponse.swift */; };
 		C6D1CF07299D3A010016CF6A /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1CF06299D3A010016CF6A /* Contract.swift */; };
 		C6D1CF09299D42720016CF6A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1CF08299D42720016CF6A /* LoginResponse.swift */; };
+		C6D6C16029B69ECB00FB032E /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C15E29B69ECB00FB032E /* ProductListViewController.swift */; };
+		C6D6C16129B69ECB00FB032E /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D6C15F29B69ECB00FB032E /* ProductListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		C6D1C8B6299AD95F006DE221 /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
 		C6D1CF06299D3A010016CF6A /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		C6D1CF08299D42720016CF6A /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		C6D6C15E29B69ECB00FB032E /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		C6D6C15F29B69ECB00FB032E /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
 		E61D6782448D5D3F96173669 /* Pods-LoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTest.release.xcconfig"; path = "Target Support Files/Pods-LoginTest/Pods-LoginTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +120,7 @@
 		C6D1C8A5299AA1BE006DE221 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				C6D6C15829B68D4A00FB032E /* ProductList */,
 				C6D1C8A6299AA37E006DE221 /* Login */,
 			);
 			path = Flow;
@@ -175,6 +180,55 @@
 				C640D30B29AEB7DF00E881B2 /* TokenAccess.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C6D6C15829B68D4A00FB032E /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				C6D6C15929B68E7500FB032E /* Model */,
+				C6D6C15A29B68E8700FB032E /* View */,
+				C6D6C15B29B68F3F00FB032E /* Interactor */,
+				C6D6C15C29B68F4C00FB032E /* Presenter */,
+				C6D6C15D29B6909B00FB032E /* Router */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		C6D6C15929B68E7500FB032E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6D6C15A29B68E8700FB032E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6D6C15E29B69ECB00FB032E /* ProductListViewController.swift */,
+				C6D6C15F29B69ECB00FB032E /* ProductListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6D6C15B29B68F3F00FB032E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C6D6C15C29B68F4C00FB032E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C6D6C15D29B6909B00FB032E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +294,7 @@
 				C6D1C89E299A9100006DE221 /* LaunchScreen.storyboard in Resources */,
 				C6D1C89B299A9100006DE221 /* Assets.xcassets in Resources */,
 				C6D1C896299A90FC006DE221 /* Main.storyboard in Resources */,
+				C6D6C16129B69ECB00FB032E /* ProductListViewController.xib in Resources */,
 				C6D1C8AA299AA39D006DE221 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D1C8B2299ABB84006DE221 /* LoginPresenter.swift in Sources */,
+				C6D6C16029B69ECB00FB032E /* ProductListViewController.swift in Sources */,
 				C6D1C8A9299AA39D006DE221 /* LoginViewController.swift in Sources */,
 				C6D1C893299A90FC006DE221 /* ViewController.swift in Sources */,
 				C6D1CF07299D3A010016CF6A /* Contract.swift in Sources */,
