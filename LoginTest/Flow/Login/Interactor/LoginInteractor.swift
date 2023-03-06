@@ -11,6 +11,7 @@ import Alamofire
 class LoginInteractor {
     
     var presenter: LoginPresentationLogic?
+
 }
 
 extension LoginInteractor: LoginBussinesLogic {
@@ -61,9 +62,8 @@ extension LoginInteractor: LoginBussinesLogic {
             switch response.result {
             case .success(let data):
                 self.receiveToken(passportToken: data.passportChangeTokenCode)
-                print("Response JSON: \(data)")
-            case .failure(let error):
-                print("Error: \(error)")
+            case .failure(_):
+                self.presenter?.presentLoginError()
             }
         }
     }
@@ -88,10 +88,10 @@ extension LoginInteractor: LoginBussinesLogic {
         ).responseDecodable(of: TokenAccess.self) {
             response in
             switch response.result {
-            case .success(let value):
-                print("Response JSON: \(value)")
-            case .failure(let error):
-                print("Error: \(error)")
+            case .success(_):
+                self.presenter?.presentLoginSuccess()
+            case .failure(_):
+                self.presenter?.presentLoginError()
             }
         }
     }

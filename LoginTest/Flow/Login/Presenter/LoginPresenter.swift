@@ -18,7 +18,4 @@ extension LoginPresenter: LoginPresentationLogic {
     
     func presentLoginError() {
     }
-    
-    func presentData(data: TokenResponse) {
-    }
 }

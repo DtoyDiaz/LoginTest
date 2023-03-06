@@ -18,7 +18,7 @@ protocol LoginBussinesLogic: AnyObject {
 }
 
 protocol LoginPresentationLogic: AnyObject {
-    func presentData(data: TokenResponse)
+//    func presentData(data: TokenResponse)
     func presentLoginSuccess()
     func presentLoginError()
 }
