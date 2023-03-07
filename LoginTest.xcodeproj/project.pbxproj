@@ -26,6 +26,11 @@
 		C6D1CF09299D42720016CF6A /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D1CF08299D42720016CF6A /* LoginResponse.swift */; };
 		C6D6C16029B69ECB00FB032E /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C15E29B69ECB00FB032E /* ProductListViewController.swift */; };
 		C6D6C16129B69ECB00FB032E /* ProductListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D6C15F29B69ECB00FB032E /* ProductListViewController.xib */; };
+		C6D6C16329B78C8F00FB032E /* ProductListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C16229B78C8F00FB032E /* ProductListInteractor.swift */; };
+		C6D6C16529B78CA700FB032E /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C16429B78CA700FB032E /* ProductListPresenter.swift */; };
+		C6D6C16729B78CC300FB032E /* ProductListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C16629B78CC300FB032E /* ProductListRouter.swift */; };
+		C6D6C16929B7950100FB032E /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C16829B7950100FB032E /* Contract.swift */; };
+		C6D6C16B29B7A65B00FB032E /* ProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D6C16A29B7A65B00FB032E /* ProductListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +56,11 @@
 		C6D1CF08299D42720016CF6A /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		C6D6C15E29B69ECB00FB032E /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		C6D6C15F29B69ECB00FB032E /* ProductListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListViewController.xib; sourceTree = "<group>"; };
+		C6D6C16229B78C8F00FB032E /* ProductListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractor.swift; sourceTree = "<group>"; };
+		C6D6C16429B78CA700FB032E /* ProductListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
+		C6D6C16629B78CC300FB032E /* ProductListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRouter.swift; sourceTree = "<group>"; };
+		C6D6C16829B7950100FB032E /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
+		C6D6C16A29B7A65B00FB032E /* ProductListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListResponse.swift; sourceTree = "<group>"; };
 		E61D6782448D5D3F96173669 /* Pods-LoginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginTest.release.xcconfig"; path = "Target Support Files/Pods-LoginTest/Pods-LoginTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +200,7 @@
 				C6D6C15B29B68F3F00FB032E /* Interactor */,
 				C6D6C15C29B68F4C00FB032E /* Presenter */,
 				C6D6C15D29B6909B00FB032E /* Router */,
+				C6D6C16829B7950100FB032E /* Contract.swift */,
 			);
 			path = ProductList;
 			sourceTree = "<group>";
@@ -206,6 +217,7 @@
 			children = (
 				C6D6C15E29B69ECB00FB032E /* ProductListViewController.swift */,
 				C6D6C15F29B69ECB00FB032E /* ProductListViewController.xib */,
+				C6D6C16A29B7A65B00FB032E /* ProductListResponse.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +225,7 @@
 		C6D6C15B29B68F3F00FB032E /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				C6D6C16229B78C8F00FB032E /* ProductListInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -220,6 +233,7 @@
 		C6D6C15C29B68F4C00FB032E /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C6D6C16429B78CA700FB032E /* ProductListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -227,6 +241,7 @@
 		C6D6C15D29B6909B00FB032E /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				C6D6C16629B78CC300FB032E /* ProductListRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -348,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6D6C16729B78CC300FB032E /* ProductListRouter.swift in Sources */,
 				C6D1C8B2299ABB84006DE221 /* LoginPresenter.swift in Sources */,
 				C6D6C16029B69ECB00FB032E /* ProductListViewController.swift in Sources */,
 				C6D1C8A9299AA39D006DE221 /* LoginViewController.swift in Sources */,
@@ -356,10 +372,14 @@
 				C6D1C88F299A90FC006DE221 /* AppDelegate.swift in Sources */,
 				C6D1C8B0299ABB38006DE221 /* LoginInteractor.swift in Sources */,
 				C6D1C8B4299ABBDC006DE221 /* HomeRouter.swift in Sources */,
+				C6D6C16329B78C8F00FB032E /* ProductListInteractor.swift in Sources */,
 				C640D30C29AEB7DF00E881B2 /* TokenAccess.swift in Sources */,
+				C6D6C16529B78CA700FB032E /* ProductListPresenter.swift in Sources */,
 				C6D1C891299A90FC006DE221 /* SceneDelegate.swift in Sources */,
+				C6D6C16929B7950100FB032E /* Contract.swift in Sources */,
 				C6D1C8B7299AD95F006DE221 /* TokenResponse.swift in Sources */,
 				C6D1CF09299D42720016CF6A /* LoginResponse.swift in Sources */,
+				C6D6C16B29B7A65B00FB032E /* ProductListResponse.swift in Sources */,
 				C6D1C899299A90FC006DE221 /* LoginTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
